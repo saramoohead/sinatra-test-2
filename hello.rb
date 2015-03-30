@@ -1,3 +1,6 @@
+require 'sinatra'
+
 get '/' do
-  'What day is it?'
+  @day = params[:day]
+  erb :index
 end
