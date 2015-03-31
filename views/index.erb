@@ -1,9 +1,10 @@
 <% if @day %>
-  Happy <%= @day %>
+  <h2>Happy <%= @day %></h2>
+  <img src='Funny-Quotes-4.jpg'>
 <% else %>
   <form action='/day'>
-    What day is it?
-    <input type='text' day='day'>
+    <h2>What day is it?</h2>
+    <input type='text' name='day'>
     <input type='submit'>
   </form>
 <% end %>
